@@ -28,6 +28,113 @@
   background-position: center; /* keeps the image centered */
   background-repeat: no-repeat;/* avoids tiling */
 }
+  /* Responsive styles for services page */
+  .services-section {
+    min-height: 60vh;
+    padding: 2rem 0;
+    font-size: 18px;
+  }
+
+  @media (max-width: 991px) {
+    .services-section {
+      height: auto;
+      padding: 2rem 0;
+      font-size: 16px;
+      text-align: center;
+    }
+    .container {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .row {
+      flex-direction: column !important;
+    }
+    .col {
+      margin-bottom: 2rem;
+    }
+  }
+
+  @media (max-width: 767px) {
+    h1.display-4, h1.text-center {
+      font-size: 2rem !important;
+    }
+    h2.text-center {
+      font-size: 1.2rem !important;
+    }
+    .lead {
+      font-size: 1rem !important;
+    }
+    .services-section {
+      font-size: 15px;
+      padding: 1rem 0;
+    }
+    .container {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .row {
+      flex-direction: column !important;
+    }
+    .col {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  /* Responsive images */
+  img.img-fluid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    width: 100%;
+    max-height: 350px;
+    height: auto !important;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  }
+
+  @media (max-width: 991px) {
+    img.img-fluid {
+      max-height: 250px;
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media (max-width: 767px) {
+    img.img-fluid {
+      max-height: 180px;
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media (max-width: 575px) {
+    img.img-fluid {
+      max-height: 120px;
+      margin-bottom: 0.5rem;
+    }
+  }
+  
+
+  @media (max-width: 575px) {
+    .services-section {
+      font-size: 13px;
+      padding: 0.5rem 0;
+    }
+    h1.display-4, h1.text-center {
+      font-size: 1.3rem !important;
+    }
+    h2.text-center {
+      font-size: 1rem !important;
+    }
+    .lead {
+      font-size: 0.9rem !important;
+    }
+    img.img-fluid {
+      border-radius: 6px;
+    }
+  }
 .carousel-item img {
     height: 80vh; /* Adjust height for hero feel */
     object-fit: cover;
